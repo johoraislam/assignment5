@@ -1,56 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const newDiv = document.createElement("div");
 
- newDiv.innerHTML = `
-    <div id="modal" class="fixed inset-0 bg-opacity-50 w-full h-full flex justify-center items-center hidden">
-        <div class="bg-gray-200 rounded-lg p-8 w-full container mx-auto text-center text-black">
-            <h1 class="text-5xl font-bold mb-4">Nilaboti Poribohon</h1>
-            <p>
-                Yes, you can run unit tests and view the results directly within the
-                app. The integrated testing features allow for a streamlined
-            </p>
-            <div class="flex justify-between items-start mt-8">
-                <div id="seat-selection" class="flex-[3]">
-                    <h2 class="text-2xl mb-4">Select Your Seat</h2>
-                    <div id="seat-plan-container" class="grid grid-cols-5 gap-2"></div>
-                </div>
-                <div id="passenger-info" class="bg-gray-200 p-4 flex-[2]">
-                    <h2 class="text-2xl mb-4">Passenger Information</h2>
-                    <input type="text" id="passenger-name" placeholder="Name" class="mb-2 w-full px-2 py-1 border rounded-md">
-                    <input type="email" id="passenger-email" placeholder="Email" class="mb-2 w-full px-2 py-1 border rounded-md">
-                    <input type="tel" id="passenger-phone" placeholder="Phone Number" class="mb-2 w-full px-2 py-1 border rounded-md">
-                     <!-- Coupon Field and Button -->
-                    <div class="flex ">
-                    <input type="text" id="coupon-code" placeholder="Enter Coupon Code" class="mb-2 w-full px-2 py-1 border rounded-md">
-                    <button id="apply-coupon" class="btn btn-primary mb-2">
-                        Apply Coupon
-                    </button>
-                    </div>
-                    <h3 class="text-2xl" id="selected-seat-info">No seat selected</h3>
-                    <p class="text-2xl" id="total-price-info">Total Price: 0 taka</p>
-
-                   
-
-                    <button id="submit" class="btn btn-success">
-                        Submit
-                    </button>
-                    <button id="close-modal" class="btn btn-error">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="confirmation-modal" class="fixed inset-0 bg-opacity-50 w-1/4 container mx-auto h-full flex justify-center items-center hidden">
-        <div class="bg-white  rounded-lg p-8 w-full container mx-auto text-center text-green-500">
-            <h1 class="text-3xl font-bold mb-4">Booking Success!</h1>
-            <p>Thank you for Booking Our Bus Seats. 
-           We are working hard to find the best service and deals for you.</p>
-            <button id="close-confirmation-modal" class="btn btn-success mt-4">Continue...</button>
-        </div>
-    </div>`;
-
-
   newDiv.id = "dynamic-div";
 
   document.body.appendChild(newDiv);
@@ -157,3 +107,4 @@ document.addEventListener("DOMContentLoaded", function () {
     confirmationModal.classList.add("hidden");
   });
 });
+
